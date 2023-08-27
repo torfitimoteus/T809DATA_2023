@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 def normal(x: np.ndarray, sigma: float, mu: float) -> np.ndarray:
     # Part 1.1
+    (1 / np.sqrt(2 * np.pi * np.power(sigma, 2))) * np.exp((- np.power(x - mu, 2)) / (2 * np.power(sigma, 2)))
 
 def plot_normal(sigma: float, mu:float, x_start: float, x_end: float):
     # Part 1.2
